@@ -1,0 +1,9 @@
+project_id = "sportzwire-team"
+
+# Facebook's OAuth redirect and database webhooks carry no Supabase JWT;
+# these functions check the caller themselves.
+[functions.meta-oauth]
+verify_jwt = false
+
+[functions.notify]
+verify_jwt = false
